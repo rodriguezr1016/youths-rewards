@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "@petfinder/petfinder-js": "^1.0.6"
+    "@petfinder/petfinder-js": "^1.0.6",
+    "mongodb": "^6.5.0"
   }
 }

@@ -315,6 +315,10 @@ ul {
   .catMenu {
     display: none
   }
+  .searchBar {
+    display:flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width:1200px){
@@ -326,7 +330,7 @@ ul {
   }
   .searchBar {
     /* margin:auto; */
-    display:inline-block
+    /* display:inline-block */
   }
 }
 @media screen and (max-width:551px){
