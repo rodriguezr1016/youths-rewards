@@ -56,7 +56,7 @@ function Nav() {
   return (
     <div>
     <header className="flex-row header">
-            <img className='logo'src='images/none.PNG'></img>
+            <img className='logo'src='https://youths-rewards.s3.us-west-1.amazonaws.com/IMG_8462+(1).png'></img>
       <h1>
         <Link to="/">
     
@@ -69,7 +69,7 @@ function Nav() {
         {showNavigation()}
       </nav>
     </header>
-    <img className='coolWebsite'src='images/nothing_2796305478.png'></img>
+    <img className='coolWebsite'src='https://youths-rewards.s3.us-west-1.amazonaws.com/nothing_2796305478.png'></img>
     </div>
   );
 }

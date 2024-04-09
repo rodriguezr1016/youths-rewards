@@ -243,11 +243,11 @@ ul {
   color: black;
 }
 .logo {
-    width: 180px;
-    height: 240px;
-    margin-top: -16px;
-    margin-bottom: -98px;
-    margin-right: -48px;
+  width: 180px;
+  height: 240px;
+  margin-top: -54px;
+  margin-bottom: -91px;
+  margin-right: -25px;
 }
 #dropdown {
   display: none;
