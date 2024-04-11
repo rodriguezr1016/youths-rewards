@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+       {
+         "src": "client/package.json",
+         "use": "@vercel/node"
+       },
+       {
+         "src": "server/package.json",
+         "use": "@vercel/node"
+       }
+    ],
+    "routes": [
+       {
+         "src": "/(.*)",
+         "dest": "client/index.html"
+       },
+       {
+         "src": "/api/(.*)",
+         "dest": "server/server.js"
+       }
+    ],
+    "env": {
+       "MONGODB_URI": "@mongodb_uri",
+       "STRIPE_PK_KEY": "@stripe_pk_key"
+    }
+   }
