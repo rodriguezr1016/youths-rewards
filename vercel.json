@@ -19,9 +19,5 @@
          "src": "/api/(.*)",
          "dest": "server/server.js"
        }
-    ],
-    "env": {
-       "MONGODB_URI": "@mongodb_uri",
-       "STRIPE_PK_KEY": "@stripe_pk_key"
-    }
+    ]
    }
