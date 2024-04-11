@@ -23,7 +23,7 @@ db.once('open', async () => {
       description:
         'Loyal and freindly with a really long tongue',
       price:  '129',
-      image: 'Rex.jpeg',
+      image: 'https://youths-rewards.s3.us-west-1.amazonaws.com/20170802_114247_Original.jpg',
       quantity: '12',
       category: categories[0]._id
     },
@@ -32,7 +32,7 @@ db.once('open', async () => {
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
       price: '300',
-      image: 'Koda.jpeg',
+      image: 'https://youths-rewards.s3.us-west-1.amazonaws.com/IMG_3132.jpeg',
       quantity: '21',
       category: categories[0]._id
 
@@ -43,7 +43,7 @@ db.once('open', async () => {
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
       quantity: '12',
-      image: 'Oliver.jpeg',
+      image: 'https://youths-rewards.s3.us-west-1.amazonaws.com/20180930_184511_Original.jpg',
       price: '20'
     },
     {
@@ -51,7 +51,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'igor.jpeg',
+      image: 'https://youths-rewards.s3.us-west-1.amazonaws.com/1F044785-FA82-4F4F-AF5D-BC9EE37FAFED_4_5005_c.jpeg',
       quantity: '50',
       price: '280'
       
