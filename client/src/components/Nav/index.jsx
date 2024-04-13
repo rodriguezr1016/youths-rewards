@@ -9,43 +9,34 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to={{pathname: "/orderHistory", state: {scrollTo: ".container my-1"}}}>
+        <div className= "container">
+	<div className= "tabs">
+		<input type="radio" id="radio-1" name="tabs"/>
+		<label className= "tab" for="radio-1"><Link to={{pathname: "/orderHistory"}}>
               Order History
-            </Link>
-          </li>
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            </Link></label>
+		<input type="radio" id="radio-2" name="tabs"/>
+		<label className= "tab" for="radio-2"><a href="/" onClick={() => Auth.logout()}>
               Logout
-            </a>
-          </li>
-        </ul>
+            </a></label>
+		<input type="radio" id="radio-3" name="tabs"/>
+
+	</div>
+</div>
       );
     } else {
       return (
-       <div className="dropdown">
-        <button id="hamburger">&#9776;</button> 
-<div id="dropdown">
-<ul >
-          <li className="mx-1">
-            <Link to="/signup">
-              Signup
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">
+        <div className= "container">
+	<div className= "tabs">
+		<input type="radio" id="radio-1" name="tabs" />
+		<label className= "tab" for="radio-1"><Link to={{pathname: "/login"}}>
               Login
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/orderHistory">
-              Order History
-            </Link>
-          </li>
-          </ul>
-</div>
+            </Link></label>
+		<input type="radio" id="radio-2" name="tabs"/>
+		<label className= "tab" for="radio-2"><Link to={{pathname: "/signup"}}>
+              Register
+            </Link></label>
+	</div>
 </div>
 
 
