@@ -9,6 +9,7 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
+        <div className="flex">
         <div className= "container">
 	<div className= "tabs">
 		<input type="radio" id="radio-1" name="tabs"/>
@@ -23,9 +24,11 @@ function Nav() {
 
 	</div>
 </div>
+</div>
       );
     } else {
       return (
+        <div className="flex">
         <div className= "container">
 	<div className= "tabs">
 		<input type="radio" id="radio-1" name="tabs" />
@@ -38,7 +41,7 @@ function Nav() {
             </Link></label>
 	</div>
 </div>
-
+</div>
 
       );
     }

@@ -139,10 +139,84 @@ input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
+nav {
+  display:flex;
+  justify-content: end;
+}
 nav div.container {
   max-width: none;
   margin-top: -75px;
-  margin-right: 0px;
+  margin-left: 100px;
+  position: absolute;
+}
+@media screen and (max-width:1359px) {
+ nav div.container{
+  position:absolute;
+  right:-1000px
+ }
+}
+@media screen and (max-width:1140px) {
+  nav div.container{
+   position:absolute;
+   right:-900px
+  }
+ }
+ @media screen and (max-width:1042px) {
+  nav div.container{
+    position: absolute;
+    top: 75px;
+    right: -832px;
+    margin-right: 50px;
+  }
+ }
+ @media screen and (max-width:910px) {
+  nav div.container{
+    position: absolute;
+    top: 75px;
+    right: -832px;
+    margin-right: 182px;
+  }
+ }
+ @media screen and (max-width: 786px) {
+  nav div.container{
+    position: absolute;
+    top: 75px;
+    right: -832px;
+    margin-right: 306px;
+  }
+ }
+ @media screen and (max-width: 661px) {
+  nav div.container{
+    position: absolute;
+    top: 75px;
+    right: -832px;
+    margin-right: 400px;
+  }
+ }
+ @media screen and (max-width: 567px) {
+  nav div.container{
+    position: absolute;
+    top: 174px;
+    right: -600px;
+  }
+ }
+ @media screen and (max-width: 528px) {
+  nav div.container{
+    position: absolute;
+    top: 174px;
+    right: -600px;
+
+  }
+ }
+ @media screen and (max-width:375px) {
+  nav div.container{
+    top: 174px;
+    right: -523px;
+  }
+  h1 {
+    margin-bottom: 87px;
+  }
+
 }
 .container {
   width: 100%;
@@ -243,6 +317,7 @@ label.tab a {
 }
 .header h1 a {
   color:black;
+  position: absolute;
   
 }
 .mx-1 a {
@@ -254,17 +329,27 @@ label.tab a {
   position: relative;
   box-sizing: border-box;
 }
+@media screen and (max-width:1381) {
+  .tabs {
+   
+   
+  }
+}
+.flex{
+  display: block;
+}
 .tabs {
   display: flex;
-  position: relative;
+  position: absolute;
   background-color: #fff;
-  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-  padding: 0.75rem;
+  box-shadow: 0 0 1px #185ee026, 0 6px 12px #185ee026;
+  padding: .75rem;
   border-radius: 99px;
-  margin-left: 1237px;
+  /* margin-left: 1237px; */
   margin-bottom: 33px;
+  top: 46px;
+  
 }
-
 .tabs * {
   z-index: 2;
 }
@@ -288,12 +373,12 @@ label.tab a {
 }
 
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
  
   .tabs {
     transform: scale(0.6);
   }
-}
+} */
 
 ul {
   list-style: none;
@@ -357,6 +442,7 @@ ul {
     position:absolute;
     right:50px
   }
+  
   .dropdown:hover #dropdown {
     border-top:none
   }
