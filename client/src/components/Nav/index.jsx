@@ -21,6 +21,10 @@ function Nav() {
               Logout
             </a></label>
 		<input type="radio" id="radio-3" name="tabs"/>
+    <input type="radio" id="radio-3" name="tabs"/>
+            <label className= "tab" for="radio-3"><Link to={{pathname: "/"}}>
+              Home
+            </Link></label>
 
 	</div>
 </div>
@@ -39,6 +43,11 @@ function Nav() {
 		<label className= "tab" for="radio-2"><Link to={{pathname: "/signup"}}>
               Register
             </Link></label>
+            <input type="radio" id="radio-3" name="tabs"/>
+            <label className= "tab" for="radio-3"><Link to={{pathname: "/"}}>
+              Home
+            </Link></label>
+            
 	</div>
 </div>
 </div>

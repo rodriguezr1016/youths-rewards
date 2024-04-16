@@ -149,13 +149,13 @@ nav div.container {
   margin-left: 100px;
   position: absolute;
 }
-@media screen and (max-width:1359px) {
+@media screen and (max-width:1354px) {
  nav div.container{
   position:absolute;
   right:-1000px
  }
 }
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1160px) {
   nav div.container{
    position:absolute;
    right:-900px
@@ -197,15 +197,7 @@ nav div.container {
   nav div.container{
     position: absolute;
     top: 174px;
-    right: -600px;
-  }
- }
- @media screen and (max-width: 528px) {
-  nav div.container{
-    position: absolute;
-    top: 174px;
-    right: -600px;
-
+    right: -575px;
   }
  }
  @media screen and (max-width:375px) {
