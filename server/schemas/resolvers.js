@@ -125,14 +125,22 @@ const resolvers = {
       throw AuthenticationError;
     },
     updateProduct: async (parent, { _id, quantity }) => {
+      if (typeof quantity !== 'number') {
+        throw new Error('Quantity must be a number');
+     }
       const decrement = Math.abs(quantity) * -1;
-
+     try{
       return await Product.findByIdAndUpdate(
         _id,
         { $inc: { quantity: decrement } },
         { new: true }
       );
-    },
+      
+    }catch (error) {
+      console.error(`Failed to update product quantity: ${error}`);
+    throw new Error('Failed to update product quantity');
+    }
+  },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 

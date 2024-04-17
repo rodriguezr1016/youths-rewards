@@ -200,7 +200,7 @@ nav div.container {
     right: -528px;
   }
  }
- @media screen and (max-width:375px) {
+ @media screen and (max-width:412px) {
   nav div.container{
     top: 174px;
     right: -523px;
