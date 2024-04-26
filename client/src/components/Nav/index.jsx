@@ -59,7 +59,7 @@ function Nav() {
   return (
     <div>
     <header className="flex-row header">
-            <img className='logo'src='https://youths-rewards.s3.us-west-1.amazonaws.com/IMG_8462+(1).png'></img>
+            <img className='logo'src='https://youths-rewards.s3.us-west-1.amazonaws.com/IMG_8462+(3).png'></img>
       <h1>
         <Link to="/">
     
